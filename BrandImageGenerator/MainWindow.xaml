@@ -1,0 +1,20 @@
+﻿<Window x:Class="BrandImageGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:brandImageGenerator="clr-namespace:BrandImageGenerator"
+        Title="Brand Image Generator" 
+        Height="408" 
+        Width="608"
+        ResizeMode="CanMinimize"
+        Icon="Icon.png">
+    <Grid>
+        <StackPanel x:Name="Panel">
+            <brandImageGenerator:CombinedImage x:Name="CombinedImage" />
+            <Label Content="Twitter Handle:" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" />
+            <TextBox x:Name="TwitterHandleTextBlock" Width="493" HorizontalAlignment="left" VerticalAlignment="Top" Margin="100,-22,10,0" KeyDown="TwitterHandleTextBlock_OnKeyDown" />
+            <Label Content="Open Windows Explorer:" Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" />
+            <CheckBox x:Name="OpenWindowsExplorer" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,-19,0,0" />
+            <Button x:Name="SubmitButton" Content="Submit" Click="SubmitButton_OnClick" Margin="10,-22,10,10" Height="35" Width="100" HorizontalAlignment="right" VerticalAlignment="Top" />
+        </StackPanel>
+    </Grid>
+</Window>
